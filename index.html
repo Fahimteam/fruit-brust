@@ -38,10 +38,10 @@
 <body>
 
     <!-- header section start -->
-    <header class="max-w-screen-lg mx-auto   px-8 md:px-16 lg:px-24  mt-12">
+    <header class="max-w-screen-lg mx-auto   px-8 md:px-16 lg:px-24  mt-12 relative">
         
         <!-- nav start -->
-        <nav x-data="{ isOpen: false }" class="relative lg:bg-[#F85559] lg:shadow dark:bg-gray-800 rounded-full">
+        <nav x-data="{ isOpen: false }" class="relative lg:bg-[#F85559] lg:shadow dark:bg-gray-800 rounded-full  ">
             <div class="container px-6 py-3 mx-auto md:flex">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center  ">
@@ -106,6 +106,83 @@
             </div>
         </nav>
         <!-- nav end -->
+
+        <!-- banner section  -->
+        <section class="mt-12">
+            <div class="carousel w-full bg-gradient-to-tr from-gray-300 to-gray-500 mt-5">
+                <div id="slide1" class="carousel-item relative w-full   ">
+                
+                    <div>
+                        <img src="./images/banner1.png" class="w-full mix-blend-multiply" />
+                    </div>
+                    <div class="absolute left-5  lg:left-72 lg:top-24 md:left-44 md:top-28 hidden   lg:block md:block   ">
+                         <h2 class="text-white text-xl lg:text-3xl md:text-3xl text-center font-bold  ">Exotic tastes at your <br> doorstep</h2>
+                         <p class="text-white px-6 lg:text-sm  ">We supply highly quality organic products
+
+                         </p>
+                        <button class="btn border-none text-white bg-[#F85559]   lg:mx-24  md:mx-24">Shop Now</button>
+                    </div>
+
+                    
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- header short menu -->
+        
+                <div class="  flex  gap-x-7 px-10 bg-white rounded-xl  max-w-screen-md mx-auto absolute  -bottom-3.5  left-[120px]  hidden lg:flex ">
+                    <div class=" text-center">
+                        <img src="./images/fruit1.png" alt="" class="">
+                        <p class="text-sm">Strawberry</p>
+
+                    </div>
+                    <div class=" text-center">
+                        <img src="./images/fruit2.png" alt="" class="">
+                        <p class="text-sm">Strawberry</p>
+
+                    </div>
+                    <div class=" text-center">
+                        <img src="./images/fruit3.png" alt="" class="">
+                        <p class="text-sm">Strawberry</p>
+
+                    </div>
+                    <div class=" text-center">
+                        <img src="./images/fruit4.png" alt="" class="">
+                        <p  class="text-sm">Strawberry</p>
+
+                    </div>
+                    <div class=" text-center">
+                        <img src="./images/fruit5.png" alt="" class="">
+                        <p class="text-sm">Strawberry</p>
+
+                    </div>
+  
+                </div>
+            
+        </section>
 
         
     </header>
