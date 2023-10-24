@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Custom style -->
     <style>
-        .loto{
+        .loto {
             font-family: 'Lato', sans-serif;
         }
     </style>
@@ -27,7 +28,7 @@
             theme: {
                 extend: {
                     colors: {
-                       ' primary-color': '#F85559',
+                        ' primary-color': '#F85559',
                     }
                 }
             }
@@ -35,11 +36,12 @@
     </script>
 
 </head>
+
 <body>
 
     <!-- header section start -->
     <header class="max-w-screen-lg mx-auto    px-8 md:px-16  lg:mt-12 relative  ">
-        
+
         <!-- nav start -->
         <nav x-data="{ isOpen: false }" class="relative lg:bg-[#F85559] lg:shadow dark:bg-gray-800 rounded-full  ">
             <div class="container px-6 py-3 mx-auto md:flex">
@@ -48,17 +50,17 @@
                         <div>
                             <a href="#">
                                 <img class="w-auto h-6 sm:h-7" src="./images/logo.png" alt="">
-                            
+
                             </a>
-                            
+
                         </div>
-                        <div >
+                        <div>
                             <a href="#" class="text-black md:text-white lg:text-white text-2xl  font-bold">
                                 Fruit Burst
                             </a>
                         </div>
-                   </div>
-        
+                    </div>
+
                     <!-- Mobile menu button -->
                     <div class="flex lg:hidden">
                         <button x-cloak @click="isOpen = !isOpen" type="button"
@@ -68,12 +70,12 @@
                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
                             </svg>
-        
-                             
+
+
                         </button>
                     </div>
                 </div>
-        
+
                 <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                 <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
                     class="absolute inset-x-0 z-20    py-4 transition-all duration-300 ease-in-out  dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-end  ">
@@ -87,17 +89,18 @@
                         <a href="#"
                             class="px-2.5 py-2  transition-colors duration-300 transform rounded-lg dark:text-gray-200   md:mx-2 hover:bg-gray-400 text-white">Contact</a>
                     </div>
-        
+
                     <div class="relative mt-4 md:mt-0">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3">
                             <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                 </path>
                             </svg>
                         </span>
-        
+
                         <input type="text"
                             class="w-full py-2 pl-10   pr-4 text-gray-700 bg-white border rounded-full dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
                             placeholder="Search">
@@ -111,20 +114,26 @@
         <section class="mt-12">
             <div class="carousel w-full bg-gradient-to-tr from-gray-300 to-gray-500 mt-5">
                 <div id="slide1" class="carousel-item relative w-full   ">
-                
+
                     <div>
                         <img src="./images/banner1.png" class="w-full mix-blend-multiply" />
                     </div>
-                    <div class="absolute left-5  lg:left-72 lg:top-24 md:left-44 md:top-28 hidden   lg:block md:block   ">
-                        <div class=""><h2 class="text-white text-xl lg:text-3xl md:text-3xl text-center font-bold  ">Exotic tastes at your <br> doorstep</h2></div>
-                         <p class="text-white px-6 lg:text-sm  ">We supply highly quality organic products
+                    <div
+                        class="absolute left-5  lg:left-72 lg:top-24 md:left-44 md:top-28 hidden   lg:block md:block   ">
+                        <div class="">
+                            <h2 class="text-white text-xl lg:text-3xl md:text-3xl text-center font-bold  ">Exotic tastes
+                                at your <br> doorstep</h2>
+                        </div>
+                        <p class="text-white px-6 lg:text-sm  ">We supply highly quality organic products
 
-                         </p>
-                        <button class="btn border-none text-white mt-3 bg-[#F85559]   lg:mx-24  md:mx-24">Shop Now</button>
+                        </p>
+                        <button class="btn border-none text-white mt-3 bg-[#F85559]   lg:mx-24  md:mx-24">Shop
+                            Now</button>
                     </div>
 
-                    
-                    <div class="absolute hidden lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+
+                    <div
+                        class="absolute hidden lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
@@ -152,39 +161,40 @@
                 </div>
             </div>
             <!-- header short menu -->
-        
-                <div class="  flex  gap-x-7 px-10 bg-white rounded-xl  max-w-screen-md mx-auto absolute  top-[400px] left-[120px]  hidden lg:flex drop-shadow p-4 ">
-                    <div class=" text-center">
-                        <img src="./images/fruit1.png" alt="" class="">
-                        <p class="text-sm">Strawberry</p>
 
-                    </div>
-                    <div class=" text-center">
-                        <img src="./images/fruit2.png" alt="" class="">
-                        <p class="text-sm">Strawberry</p>
+            <div
+                class="  flex  gap-x-7 px-10 bg-white rounded-xl  max-w-screen-md mx-auto absolute  top-[400px] left-[120px]  hidden lg:flex drop-shadow p-4 ">
+                <div class=" text-center">
+                    <img src="./images/fruit1.png" alt="" class="">
+                    <p class="text-sm">Strawberry</p>
 
-                    </div>
-                    <div class=" text-center">
-                        <img src="./images/fruit3.png" alt="" class="">
-                        <p class="text-sm">Strawberry</p>
-
-                    </div>
-                    <div class=" text-center">
-                        <img src="./images/fruit4.png" alt="" class="">
-                        <p  class="text-sm">Strawberry</p>
-
-                    </div>
-                    <div class=" text-center">
-                        <img src="./images/fruit5.png" alt="" class="">
-                        <p class="text-sm">Strawberry</p>
-
-                    </div>
-  
                 </div>
-            
+                <div class=" text-center">
+                    <img src="./images/fruit2.png" alt="" class="">
+                    <p class="text-sm">Strawberry</p>
+
+                </div>
+                <div class=" text-center">
+                    <img src="./images/fruit3.png" alt="" class="">
+                    <p class="text-sm">Strawberry</p>
+
+                </div>
+                <div class=" text-center">
+                    <img src="./images/fruit4.png" alt="" class="">
+                    <p class="text-sm">Strawberry</p>
+
+                </div>
+                <div class=" text-center">
+                    <img src="./images/fruit5.png" alt="" class="">
+                    <p class="text-sm">Strawberry</p>
+
+                </div>
+
+            </div>
+
         </section>
 
-        
+
     </header>
     <!-- header section  end -->
 
@@ -194,11 +204,12 @@
             <!-- section title  -->
             <div class=" flex flex-col space-y-6  lg:flex-row gap-10  lg:gap-40  lg:mt-24">
                 <div class="w-full space-y-2">
-                <h2 class="text-[#121212] text-5xl  font-extrabold ">
+                    <h2 class="text-[#121212] text-5xl  font-extrabold ">
                         Deal of the day
                     </h2>
-                    <p class=" ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
-                    making it over 2000 years old.</p>
+                    <p class=" ">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC,
+                        making it over 2000 years old.</p>
 
                 </div>
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
@@ -229,6 +240,247 @@
                 </div>
             </div>
 
+            <!-- modal section  and card section -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- card 01 -->
+                <div class="card   bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+
+                        <p>Apples</p>
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions">
+                    
+                            <a href="#my_modal_8" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
+                               
+                            <div class="modal  " id="my_modal_8">
+                                <div class="modal-box ">
+                                    <div class="card ">
+                                        <figure class="  ">
+                                            <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-3">
+                                            <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                                    
+                                            <p>Apple</p>
+                                            
+                                            <div>
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    it is my favorite
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </div>
+                                            <button class="btn">Add to cart</button>
+                                    
+                                             
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="modal-action">
+                                        <a href="#" class="btn">Chancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 02 -->
+                <div class="card   bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+
+                        <p>Orange</p>
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions">
+                    
+                            <a href="#my_modal_9" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
+                               
+                            <div class="modal  " id="my_modal_9">
+                                <div class="modal-box ">
+                                    <div class="card ">
+                                        <figure class="  ">
+                                            <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-3">
+                                            <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                                    
+                                            <p>Orange</p>
+                                            
+                                            <div>
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    it is my favorite
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </div>
+                                            <button class="btn">Add to cart</button>
+                                    
+                                             
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="modal-action">
+                                        <a href="#" class="btn">Chancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 03 -->
+                <div class="card   bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+
+                        <p>Orange</p>
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions">
+                    
+                            <a href="#my_modal_11" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
+                               
+                            <div class="modal  " id="my_modal_11">
+                                <div class="modal-box ">
+                                    <div class="card ">
+                                        <figure class="  ">
+                                            <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-3">
+                                            <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                                    
+                                            <p>Orange</p>
+                                            
+                                            <div>
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    it is my favorite
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </div>
+                                            <button class="btn">Add to cart</button>
+                                    
+                                             
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="modal-action">
+                                        <a href="#" class="btn">Chancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 04 -->
+                <div class="card   bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+
+                        <p>Orange</p>
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions">
+                    
+                            <a href="#my_modal_12" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
+                               
+                            <div class="modal  " id="my_modal_12">
+                                <div class="modal-box ">
+                                    <div class="card ">
+                                        <figure class="  ">
+                                            <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-3">
+                                            <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                                    
+                                            <p>Orange</p>
+                                            
+                                            <div>
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    it is my favorite
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </div>
+                                            <button class="btn">Add to cart</button>
+                                    
+                                             
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="modal-action">
+                                        <a href="#" class="btn">Chancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+
         </section>
     </main>
     <!-- main section end -->
@@ -237,6 +489,7 @@
     <footer>
     </footer>
     <!-- footer section end  -->
-    
+
 </body>
+
 </html>
