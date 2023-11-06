@@ -27,8 +27,11 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        ' primary-color': '#F85559',
+                    color:{
+                        'font-clr':"#F85559",
+                    },
+                    backgroundImage: {
+                        'hero-img': "url('./images/banner2.png')",
                     }
                 }
             }
@@ -119,7 +122,7 @@
                         <img src="./images/banner1.png" class="w-full mix-blend-multiply" />
                     </div>
                     <div
-                        class="absolute left-5  lg:left-72 lg:top-24 md:left-44 md:top-28 hidden   lg:block md:block   ">
+                        class="absolute left-5  lg:left-72 lg:top-24 md:left-44 md:top-28    ">
                         <div class="">
                             <h2 class="text-white text-xl lg:text-3xl md:text-3xl text-center font-bold  ">Exotic tastes
                                 at your <br> doorstep</h2>
@@ -133,9 +136,9 @@
 
 
                     <div
-                        class="absolute hidden lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        class="absolute hidden lg:flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2  ">
+                        <a href="#slide4" class="btn btn-circle ">❮</a>
+                        <a href="#slide2" class=" bg-white rounded-full w-6 h-6 text-center">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
@@ -212,27 +215,27 @@
                         making it over 2000 years old.</p>
 
                 </div>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="grid grid-flow-col gap-5 text-center mx-auto ">
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
+                        <span class="countdown font-mono text-2xl lg:text-5xl">
                             <span style="--value:15;"></span>:
                         </span>
                         days
                     </div>
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
+                        <span class="countdown font-mono text-2xl lg:text-5xl">
                             <span style="--value:10;"></span>:
                         </span>
                         hours
                     </div>
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
+                        <span class="countdown font-mono text-2xl lg:text-5xl">
                             <span style="--value:24;"></span>:
                         </span>
                         min
                     </div>
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
+                        <span class="countdown font-mono text-2xl lg:text-5xl">
                             <span style="--value:47;"></span>
                         </span>
                         sec
@@ -241,14 +244,14 @@
             </div>
 
             <!-- modal section  and card section -->
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  ">
                 <!-- card 01 -->
-                <div class="card   bg-base-100 shadow-xl">
+                <div class="card    bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center space-y-3">
-                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                    <div class=" items-center text-center space-y-3">
+                        <h2 class="card card-title   border-b-2 pb-4 border-gray-300 m">12.90$ - 18.85$</h2>
 
                         <p>Apples</p>
                         <div class="rating rating-lg rating-half">
@@ -266,33 +269,33 @@
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
 
-                        <div class="card-actions">
-                    
-                            <a href="#my_modal_8" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
-                               
+                        <div class="card-actions mx-auto ">
+
+                            <a href="#my_modal_8" class=" text-[#F85559] border-b-2 border-[#F85559]  mx-auto mb-5">Details</a>
+
                             <div class="modal  " id="my_modal_8">
-                                <div class="modal-box ">
-                                    <div class="card ">
+                                <div class="modal-box w-52 h-208 lg:w-96 lg:h-96 px-5 lg:px-2 ">
+                                    <div class="card   text-center">
                                         <figure class="  ">
                                             <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
-                                        <div class="card-body items-center text-center space-y-3">
-                                            <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
-                                    
+                                        <div class=" items-center text-center space-y-3">
+                                            <!-- <h2 class="card-title  border-b-2 pb-4 border-gray-300 card-title card">12.90$ - 18.85$</h2> -->
+
                                             <p>Apple</p>
-                                            
+
                                             <div>
                                                 <p>
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                                     it is my favorite
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </div>
                                             <button class="btn">Add to cart</button>
-                                    
-                                             
+
+
                                         </div>
                                     </div>
-                                     
+
                                     <div class="modal-action">
                                         <a href="#" class="btn">Chancel</a>
                                     </div>
@@ -303,11 +306,11 @@
                 </div>
                 <!-- card 02 -->
                 <div class="card   bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
+                    <figure class="px-10 pt-8">
                         <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center space-y-3">
-                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                    <div class=" items-center text-center space-y-3">
+                        <h2 class="card-title card border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
 
                         <p>Orange</p>
                         <div class="rating rating-lg rating-half">
@@ -325,33 +328,33 @@
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
 
-                        <div class="card-actions">
-                    
-                            <a href="#my_modal_9" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
-                               
+                        <div class="card-actions ">
+
+                            <a href="#my_modal_9" class=" text-[#F85559] mb-5 mx-auto border-b-2 border-[#F85559]">Details</a>
+
                             <div class="modal  " id="my_modal_9">
                                 <div class="modal-box ">
                                     <div class="card ">
                                         <figure class="  ">
                                             <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
-                                        <div class="card-body items-center text-center space-y-3">
+                                        <div class=" items-center text-center space-y-3">
                                             <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
-                                    
+
                                             <p>Orange</p>
-                                            
+
                                             <div>
                                                 <p>
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                                     it is my favorite
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </div>
                                             <button class="btn">Add to cart</button>
-                                    
-                                             
+
+
                                         </div>
                                     </div>
-                                     
+
                                     <div class="modal-action">
                                         <a href="#" class="btn">Chancel</a>
                                     </div>
@@ -365,8 +368,8 @@
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center space-y-3">
-                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                    <div class=" items-center text-center space-y-3">
+                        <h2 class="card-title card  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
 
                         <p>Orange</p>
                         <div class="rating rating-lg rating-half">
@@ -384,33 +387,35 @@
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
 
-                        <div class="card-actions">
-                    
-                            <a href="#my_modal_11" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
-                               
+                        <div class="card-actions mx-auto">
+
+                            <div class="mx-auto">
+                                <a href="#my_modal_11" class=" text-[#F85559] border-b-2 mx-auto mb-5 border-[#F85559]">Details</a>
+                            </div>
+
                             <div class="modal  " id="my_modal_11">
                                 <div class="modal-box ">
                                     <div class="card ">
                                         <figure class="  ">
                                             <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
-                                        <div class="card-body items-center text-center space-y-3">
+                                        <div class=" items-center text-center space-y-3">
                                             <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
-                                    
+
                                             <p>Orange</p>
-                                            
+
                                             <div>
                                                 <p>
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                                     it is my favorite
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </div>
                                             <button class="btn">Add to cart</button>
-                                    
-                                             
+
+
                                         </div>
                                     </div>
-                                     
+
                                     <div class="modal-action">
                                         <a href="#" class="btn">Chancel</a>
                                     </div>
@@ -424,8 +429,8 @@
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center space-y-3">
-                        <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
+                    <div class=" items-center text-center space-y-3">
+                        <h2 class="card card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
 
                         <p>Orange</p>
                         <div class="rating rating-lg rating-half">
@@ -444,32 +449,32 @@
                         </div>
 
                         <div class="card-actions">
-                    
-                            <a href="#my_modal_12" class=" text-[#F85559] border-b-2 border-[#F85559]">Details</a>
-                               
+
+                            <a href="#my_modal_12" class=" text-[#F85559] border-b-2 mb-5 mx-auto border-[#F85559]">Details</a>
+
                             <div class="modal  " id="my_modal_12">
                                 <div class="modal-box ">
                                     <div class="card ">
                                         <figure class="  ">
                                             <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
                                         </figure>
-                                        <div class="card-body items-center text-center space-y-3">
+                                        <div class=" items-center text-center space-y-3">
                                             <h2 class="card-title  border-b-2 pb-4 border-gray-300">12.90$ - 18.85$</h2>
-                                    
+
                                             <p>Orange</p>
-                                            
+
                                             <div>
                                                 <p>
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                                     it is my favorite
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </div>
                                             <button class="btn">Add to cart</button>
-                                    
-                                             
+
+
                                         </div>
                                     </div>
-                                     
+
                                     <div class="modal-action">
                                         <a href="#" class="btn">Chancel</a>
                                     </div>
@@ -478,9 +483,88 @@
                         </div>
                     </div>
                 </div>
-                 
-            </div>
 
+
+            </div>
+            <div class="text-center mx-auto mt-5">
+                <button class="btn text-white bg-[#F85559]   ">Shop All</button>
+            </div>
+        </section>
+
+       
+        
+        <section class="bg-slate-500 max-w-screen-lg mx-auto px-8 my-10 md:px16 lg:px24 py-5">
+            <!-- section title  -->
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white mt-48">
+                    Meet the team section
+                </h2>
+                <p class="text-white px-auto lg:px-48  ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                making it over 2000 years old.</p>
+            </div>
+            <!-- team section  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- card 1 -->
+                <div class="card    ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images//member1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white">Awlad Hossain</h2>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="card-actions text-white">
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card    ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images//member1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white">Awlad Hossain</h2>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="card-actions text-white">
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card    ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images//member1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white">Awlad Hossain</h2>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="card-actions text-white">
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card    ">
+                    <figure class="px-10 pt-10">
+                        <img src="./images//member1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white">Awlad Hossain</h2>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="card-actions text-white">
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                             <span><i class="fa-brands fa-facebook text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- main section end -->
